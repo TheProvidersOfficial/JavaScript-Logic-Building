@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial using Loop | JavaScript Logic Building</title>
+</head>
+<body>
+
+    <a href="https://youtu.be/1nKQPNnOrFI?si=s1pJR03jdZ-WOf1H" target="_blank">Factorial using Loop</a>
+
+    
+    <script>
+
+        function factorial(n){
+
+            if(n < 0) return undefined;
+
+            let factorial = 1;
+            for(let i = 2; i <= n; i++){
+                factorial  =  factorial * i; // 2 , 6 , 24 
+            }
+
+            return factorial;
+
+        }
+
+         
+        // let a = factorial(3);
+        console.log(factorial(5));
+        console.log(factorial(3));
+
+
+
+
+    </script>
+    
+</body>
+</html>
