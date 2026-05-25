@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap Two Numbers - JavaScript Logic Building </title>
+</head>
+
+<body>
+
+    <a href="https://youtu.be/l2S9xvw1ab4?si=j18xtiCJA3rpXHKm" target="_blank">Swap Two Numbers</a>
+
+    <p>Please inspect the page and open the Console tab in the Developer Tools.</p>
+
+    <script>
+
+        let a = 10;
+        let b = 20;
+
+        console.log("Swapping Two Numbers using Temporary Variable");
+        console.log("Before Swapping");
+        console.log("A = " + a);
+        console.log("B = " + b);
+
+
+
+        let temp = a;  //10
+        a = b;
+        b = temp;
+
+        console.log("After Swapping");
+        console.log("A = " + a);
+        console.log("B = " + b);
+
+        console.log("================================");
+
+        console.log("Swapping Two Numbers without Temporary Variable");
+        let c = 8;
+        let d = 4;
+
+        console.log("Before Swapping");
+        console.log("C = " + c);
+        console.log("D = " + d);
+
+        c = c + d;   // c= 12 = 8 + 4
+        d = c - d; /// 12 - 4 = 8
+        c = c - d;  // 12 - 8 = 4
+
+        console.log("After Swapping");
+        console.log("C = " + c);
+        console.log("D = " + d);
+
+    </script>
+
+</body>
+
+</html>
