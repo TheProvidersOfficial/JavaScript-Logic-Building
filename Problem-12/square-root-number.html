@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Square Root of a Number - Logic Building in JavaScript</title>
+</head>
+
+<body>
+
+    <a href="https://youtu.be/IicmkvBs360?si=rtd5Xaq8WfrECGro" target="_blank">Learn Find Square Root of a Number in JS  </a>
+
+    <p>Please inspect the page and open the Console tab in the Developer Tools.</p>
+
+
+    <h2>Find Square Root of a Number # 12</h2>
+
+    <script>
+
+        function squareroot(n){
+
+            if(n < 0){
+                return "Invalid Input";
+            }
+
+            let sq = Math.sqrt(n);
+
+            return sq;
+
+        }
+        let number = Number(prompt("Enter Number : "));
+        console.log("Square Root: " + squareroot(number))
+
+    </script>
+
+
+
+
+</body>
+</html>
