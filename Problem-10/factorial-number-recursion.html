@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Number Using Recursion in JS - Logic Building in JavaScript</title>
+</head>
+
+<body>
+
+    <a href="https://youtu.be/ZE1__hhbVfs?si=Yo3EiIFfh6RiB9Cx" target="_blank">Learn Factorial Number Using Recursion in JS  </a>
+
+    <p>Please inspect the page and open the Console tab in the Developer Tools.</p>
+
+
+
+    <h2>Factorial Number Using Recursion # 10</h2>
+
+    <script>
+
+        function factorial(n) {
+            // base condition
+            if (n == 0 || n == 1) {
+                return 1;
+            }
+
+
+            return n * factorial(n - 1);
+        }
+
+        console.log(factorial(5));
+
+
+        function squaroot(n) {
+            if (isNaN(n)) {
+                return "Invalid Number"
+            }
+            if (n < 0) {
+                return "Invalid Input";
+            }
+
+            let sq = Math.sqrt(n);
+
+            return sq;
+
+        }
+
+        console.log(squaroot(-36));
+
+        
+        const numbers = [10, 45, 7, 99, 23];
+        let largest = numbers[0];
+        
+        for (let i = 1; i < numbers.length; i++) {
+            if (numbers[i] > largest) {
+                largest = numbers[i];
+            }
+        }
+
+        console.log(largest);
+
+
+
+
+    </script>
+
+</body>
+
+</html>
