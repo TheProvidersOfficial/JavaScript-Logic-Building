@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Random Number in JS - Logic Building in JavaScript</title>
+</head>
+<body>
+
+    <a href="https://youtu.be/MnskqDcGPu0?si=Y1FPNIrW7OFLkHZ_" target="_blank">Learn Generate Random Number in JS  </a>
+
+    <p>Please inspect the page and open the Console tab in the Developer Tools and refresh multiple times.</p>
+
+
+    <h2>Generate Random Number Problem # 9</h2>
+
+    <script>
+        // // 3.2 , 3.3 , 3.7 = 4 , 1 to 5
+        console.log(Math.ceil(Math.random() * 5));
+        
+        // // 3.2 , 3.3 , 3.7 = 3 , 0 to 4
+        console.log(Math.floor(Math.random() * 5) + 1);
+
+         
+        function getRandomNum(max){
+            return Math.floor(Math.random() * max) +1;
+        }
+
+       console.log(getRandomNum(6));
+
+
+    let array = ['farhan','ali','ahmed','shahid'];
+
+    console.log(array[Math.floor(Math.random() * 
+    array.length)]);
+
+    let otp = Math.floor(Math.random() * 9000) + 1000;
+
+    console.log(otp);
+    
+    
+
+    </script>
+
+</body>
+</html>
