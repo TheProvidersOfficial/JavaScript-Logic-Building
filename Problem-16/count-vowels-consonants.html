@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Number of Vowels & Consonants - Logic Building in JavaScript</title>
+</head>
+
+<body>
+
+     <a href="https://youtu.be/1R3oAfatNeo?si=LtZW5XszV7z5iTea" target="_blank">Count Number of Vowels & Consonants</a>
+
+    <p>Please inspect the page and open the Console tab in the Developer Tools.</p>
+
+    
+    <h2>Count Number of Vowels & Consonants # 16</h2>
+
+    <script>
+
+        const str = "The Providers";        
+
+        let vowels = 0;
+        let consonants = 0;
+        let vowellist = "aeiou";
+
+        for(let char of str.toLowerCase()){
+            
+            // if(char == "a" || char == "e" || char == "i" 
+            // || char == "o" || char == "u"){
+            //     vowels++;
+            // }
+            if(vowellist.includes(char)){ //true
+                vowels++;
+            }
+            else if(char >= 'a' && char <= 'z'){
+                consonants++;
+            }
+
+        }
+
+        console.log("Vowels: ", vowels);
+        console.log("Consonants: ", consonants);
+
+
+
+
+    </script>
+
+
+</body>
+</html>
