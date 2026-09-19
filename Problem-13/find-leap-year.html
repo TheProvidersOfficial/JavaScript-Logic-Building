@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check it is a Leap Year - Logic Building in JavaScript</title>
+</head>
+
+<body>
+
+    
+    <a href="https://youtu.be/bfXTfM5S308?si=b4eabMYJolDlgTIy" target="_blank">Check it is a Leap Year in JS  </a>
+
+    <p>Please inspect the page and open the Console tab in the Developer Tools.</p>
+
+    <h2>Check it is a Leap Year # 13</h2>
+
+    <script>
+
+            function isLeapYear(year){
+
+                return (year % 4 === 0 && year % 100 != 0) 
+                || (year % 400 == 0) 
+
+            }
+
+            let year = Number(prompt("enter Year : "));
+            
+            if(isLeapYear(year)){
+                console.log(`${year} is Leap year`)
+            }
+            else{
+                console.log(`${year} is Not Leap year`)
+            }
+
+
+    </script>
+
+
+
+
+</body>
+</html>
