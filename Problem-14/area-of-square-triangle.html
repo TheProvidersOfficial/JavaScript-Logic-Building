@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Area of Square & Triangle - Logic Building in JavaScript</title>
+</head>
+
+<body>
+
+        
+    <a href="https://youtu.be/7OQwfhcnSGc?si=P-oCygjxX1j4V0LA" target="_blank">Calculate Area of Square & Triangle</a>
+
+    <p>Please inspect the page and open the Console tab in the Developer Tools.</p>
+
+    <h2>Calculate Area of Square & Triangle # 14</h2>
+
+    <script>
+
+        function areaTriangle(base,height){
+            return (base * height) / 2;
+        }
+        
+        let base = Number(prompt("Enter Base Number: "));
+        let height = Number(prompt("Enter Height Number: "));
+        console.log("Area of Triangle: "+areaTriangle(base,height))
+
+        function areaSquare(side){
+            return side * side;
+        }
+
+        let area = areaSquare(10)
+        console.log("Square Area " + area)
+
+    </script>
+
+
+</body>
+</html>
