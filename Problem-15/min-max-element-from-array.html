@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min & Max number from Array using Loop - Logic Building in JavaScript</title>
+</head>
+
+<body>
+
+    <a href="https://youtu.be/E6teg7tGf1M?si=tRML8jwoJxnJUy8q" target="_blank">Min & Max Num from Array using Loop</a>
+
+    <p>Please inspect the page and open the Console tab in the Developer Tools.</p>
+
+    
+    <h2>Min & Max Num from Array using Loop # 15</h2>
+
+    <script>
+
+        const array = [23,22,2,78,62,33]
+
+        let min = array[0];
+        let max = array[0];
+
+        for(let i = 1; i < array.length; i++){
+
+            if(array[i] < min){
+                min = array[i];
+            }
+            if(array[i] > max){
+                max = array[i];
+            }
+        }
+
+        console.log("Minimum num: " + min)
+        console.log("Maximum num: " + max)
+
+
+    </script>
+
+
+</body>
+</html>
